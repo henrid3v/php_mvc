@@ -6,7 +6,7 @@ class Database {
     * @return PDO
     */
     public static function getPdo(): PDO{
-       $pdo = new PDO('mysql:host=localhost;dbname=recrutement;charset=utf8', 'root', '', [
+       $pdo = new PDO('mysql:host=localhost;dbname=?;charset=utf8', '?', '', [
            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
        ]);
